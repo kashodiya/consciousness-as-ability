@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kaushik Ashodiya" />
+  <title>CoFA: Academic Whitepaper — Consciousness as a Fundamental Ability</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  
+  <meta name="description" content="Academic treatment of CoFA — a philosophical framework defining consciousness as the fundamental ability to know. By Kaushik Ashodiya.">
+  <meta name="author" content="Kaushik Ashodiya">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kashodiya.github.io/consciousness-as-ability/whitepaper.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="CoFA: Academic Whitepaper — Consciousness as a Fundamental Ability">
+  <meta property="og:description" content="Academic treatment of CoFA — a philosophical framework defining consciousness as the fundamental ability to know. By Kaushik Ashodiya.">
+  <meta property="og:url" content="https://kashodiya.github.io/consciousness-as-ability/whitepaper.html">
+  <style>
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #222;
+    max-width: 780px;
+    margin: 60px auto;
+    padding: 0 40px 80px 40px;
+    background: #fefefe;
+  }
+  h1 { font-size: 2em; margin-top: 2em; border-bottom: 2px solid #ccc; padding-bottom: 0.3em; }
+  h2 { font-size: 1.5em; margin-top: 1.8em; color: #333; }
+  h3 { font-size: 1.2em; margin-top: 1.4em; color: #444; }
+  p  { margin: 1em 0; }
+  blockquote { border-left: 4px solid #aaa; margin: 1.5em 2em; padding: 0.5em 1em; color: #555; font-style: italic; }
+  nav#TOC { background: #f5f5f5; border: 1px solid #ddd; border-radius: 6px; padding: 20px 30px; margin-bottom: 3em; }
+  nav#TOC ul { padding-left: 1.2em; }
+  nav#TOC li { margin: 0.3em 0; }
+  nav#TOC a  { color: #555; text-decoration: none; }
+  nav#TOC a:hover { color: #000; text-decoration: underline; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 3em 0; }
+  #title-block-header { text-align: center; margin-bottom: 3em; border-bottom: 2px solid #ccc; padding-bottom: 2em; }
+  .title  { font-size: 2.5em; font-weight: bold; }
+  .author { font-size: 1.2em; color: #555; margin-top: 0.5em; }
+  .back-link { display: inline-block; margin-bottom: 2em; font-size: 0.9em; color: #555; text-decoration: none; border-bottom: 1px solid #ccc; }
+  .back-link:hover { color: #000; }
+  </style>
+  <p><a class="back-link" href="index.html">← Back to CoFA home</a></p>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">CoFA: Academic Whitepaper — Consciousness as a
+Fundamental Ability</h1>
+<p class="author">Kaushik Ashodiya</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#the-ability-to-know-a-new-theoretical-framework-for-consciousness"
+id="toc-the-ability-to-know-a-new-theoretical-framework-for-consciousness">THE
+ABILITY TO KNOW: A New Theoretical Framework for Consciousness</a>
+<ul>
+<li><a href="#abstract" id="toc-abstract">Abstract</a></li>
+<li><a href="#introduction" id="toc-introduction">1.
+Introduction</a></li>
+<li><a href="#foundational-dualism-and-the-definition-of-consciousness"
+id="toc-foundational-dualism-and-the-definition-of-consciousness">2.
+Foundational Dualism and the Definition of Consciousness</a></li>
+<li><a href="#the-instruments-of-knowledge"
+id="toc-the-instruments-of-knowledge">3. The Instruments of
+Knowledge</a></li>
+<li><a href="#the-brain-mind-relationship"
+id="toc-the-brain-mind-relationship">4. The Brain-Mind
+Relationship</a></li>
+<li><a href="#the-hard-problem-dissolved"
+id="toc-the-hard-problem-dissolved">5. The Hard Problem —
+Dissolved</a></li>
+<li><a href="#the-neural-correlates-of-consciousness-reinterpreted"
+id="toc-the-neural-correlates-of-consciousness-reinterpreted">6. The
+Neural Correlates of Consciousness — Reinterpreted</a></li>
+<li><a href="#relationship-to-existing-theories-of-consciousness"
+id="toc-relationship-to-existing-theories-of-consciousness">7.
+Relationship to Existing Theories of Consciousness</a></li>
+<li><a href="#implications" id="toc-implications">8.
+Implications</a></li>
+<li><a href="#new-research-directions-and-testable-questions"
+id="toc-new-research-directions-and-testable-questions">9. New Research
+Directions and Testable Questions</a></li>
+<li><a href="#conclusion" id="toc-conclusion">10. Conclusion</a></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1
+id="the-ability-to-know-a-new-theoretical-framework-for-consciousness">THE
+ABILITY TO KNOW: A New Theoretical Framework for Consciousness</h1>
+<p><strong>Author:</strong> Kaushik Ashodiya</p>
+<p><strong>Submitted to:</strong> Journal of Consciousness Studies</p>
+<p><strong>Keywords:</strong> consciousness, ability to know,
+instruments of knowledge, hard problem, neural correlates of
+consciousness, foundational dualism, brain-mind relationship,
+panpsychism, integrated information theory, global workspace theory</p>
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p>This paper proposes a new theoretical framework for understanding
+consciousness — one that is philosophically precise, scientifically
+compatible, and capable of generating new research directions. The
+framework defines consciousness as <em>the ability to know</em> — in
+deliberate analogy with physics’ definition of energy as the ability to
+do work. Consciousness, on this definition, is foundational,
+omnipresent, and unchanging — not produced by physical processes, not
+emergent from the brain, and not reducible to subjective experience.</p>
+<p>Physical reality — the domain of everything within time and space,
+including the brain, sensory organs, mind, and intellect — is the domain
+through which the foundational ability to know expresses itself as
+actual experience in living beings. The framework introduces the concept
+of <em>instruments of knowledge</em> — the sensory organs and the
+internal instruments of mind and intellect — as the conditions that
+determine the richness of a being’s conscious experience, accounting for
+the vast spectrum of conscious experience across life forms without
+positing variation in consciousness itself.</p>
+<p>The paper argues against existing definitions of consciousness —
+phenomenal, functionalist, and neural identity — and positions the
+framework relative to property dualism, panpsychism, Integrated
+Information Theory, Global Workspace Theory, and quantum theories of
+consciousness. It dissolves the hard problem of consciousness by
+inverting the production assumption: the question is not how physical
+processes produce consciousness but what conditions allow the
+foundational ability to know to express itself as experience. It
+reinterprets the neural correlates of consciousness research program as
+mapping correlates of experience content rather than the cause of
+knowing. And it identifies specific new research directions and testable
+questions that distinguish this framework from conventional materialist
+accounts.</p>
+<hr />
+<h2 id="introduction">1. Introduction</h2>
+<p>The question of consciousness — what it is, how it arises, and what
+its relationship to the physical brain is — remains one of the most
+fundamental and least resolved problems in science and philosophy.
+Despite extraordinary progress in neuroscience, cognitive science, and
+the philosophy of mind over the past half century, the most basic
+questions remain genuinely open.</p>
+<p>Why does subjective experience exist at all? Why is there something
+it is like to be a conscious being — rather than all physical processing
+occurring without any inner felt quality? And what is the relationship
+between the brain’s physical processes and the felt quality of
+experience?</p>
+<p>Mainstream science has addressed these questions within a broadly
+materialist framework — one that assumes consciousness is produced by,
+or identical to, certain kinds of brain activity. Within this framework,
+the hard problem of consciousness — as formulated by Chalmers (1995,
+1996) — has proved persistently intractable. Decades of intensive
+investigation have produced increasingly detailed maps of the neural
+correlates of consciousness (Dehaene, 2014; Koch, 2019) without
+resolving the fundamental question of why any physical process gives
+rise to subjective experience at all. The assumption that consciousness
+is emergent from brain activity may itself be the source of this
+intractability.</p>
+<p>Non-materialist alternatives have not fared better. Traditional
+substance dualism — in the Cartesian tradition — faces the interaction
+problem: how does a non-physical mind causally interact with a physical
+body? Property dualism avoids this by locating mental properties within
+physical systems — but faces the charge of epiphenomenalism: if mental
+properties are not reducible to physical properties, how do they exert
+causal influence? Panpsychism avoids epiphenomenalism by making
+consciousness fundamental — but faces the combination problem: how do
+micro-level experiential properties combine to form unified macro-level
+experience?</p>
+<p>The present paper proposes a third position — neither standard
+materialist nor Cartesian dualist — that defines consciousness as the
+foundational ability to know, proposes a natural account of experience
+as arising through instruments of knowledge, and reconceptualizes the
+brain-mind relationship as a substrate-instrument relationship rather
+than a production relationship. The paper then positions this framework
+relative to each major existing theory — identifying precisely where it
+diverges and where it converges.</p>
+<p>A methodological note is appropriate here. The framework proposed is
+foundational — it posits consciousness as non-physical and as a
+fundamental constituent of reality alongside the physical. This will
+invite the objection that it is metaphysics rather than science. The
+objection is acknowledged but not accepted. Foundational scientific
+theories characteristically begin as conceptual frameworks before the
+empirical tools required to test them exist. Atomic theory was purely
+philosophical for over two thousand years before chemistry and physics
+produced the tools to confirm it. General relativity was widely regarded
+as speculative philosophy before astronomical observation provided
+confirmation. Quantum field theory remains philosophically disorienting
+yet is the most precisely confirmed framework in physics. The
+appropriate criterion for evaluating a foundational proposal is not
+whether it is currently fully testable — no foundational proposal ever
+is — but whether it is internally coherent, resolves existing
+difficulties better than alternatives, and generates genuine research
+directions. The present framework is offered on that basis.</p>
+<p>The paper proceeds as follows. Section 2 develops the foundational
+dualism, the definition of consciousness, its contrast with existing
+definitions, and its immediate consequences. Section 3 presents the
+instruments of knowledge framework. Section 4 addresses the brain-mind
+relationship and the neuroscientific evidence. Section 5 dissolves the
+hard problem. Section 6 reinterprets the neural correlates of
+consciousness research program. Section 7 compares the framework to
+existing theories of consciousness. Section 8 addresses implications for
+personal identity, artificial consciousness, and animal consciousness.
+Section 9 identifies new research directions and testable questions.
+Section 10 concludes.</p>
+<hr />
+<h2 id="foundational-dualism-and-the-definition-of-consciousness">2.
+Foundational Dualism and the Definition of Consciousness</h2>
+<h3 id="two-fundamentals">2.1 Two Fundamentals</h3>
+<p>The framework proposes that reality consists of two fundamental and
+irreducible components: consciousness and physical reality. Neither
+component reduces to the other. Neither created the other. They are the
+co-foundational constituents of everything that exists.</p>
+<p><em>Physical reality</em> is defined as everything that exists within
+time and space — bodies, brains, sensory organs, mind, intellect, and
+the physical world. It is the domain of everything that can appear in
+experience, be perceived, measured, or known.</p>
+<p><em>Consciousness</em> is defined as the ability to know — the
+fundamental, universal, and unchanging capacity that is the enabling
+ground of all experience and all knowing. Consciousness is not within
+time and space. It does not evolve, develop, or vary. It is omnipresent
+— not more present in complex beings than in simple ones.</p>
+<p>This position constitutes a form of dualism — but one that differs
+significantly from Cartesian dualism of thinking substance and extended
+substance (Descartes, 1641/1984). In Cartesian dualism, <em>mind</em> is
+the non-physical component — generating the interaction problem: how
+does non-physical mind causally interact with physical body? The present
+framework relocates the boundary: <em>mind</em> is physical (it is an
+instrument of knowledge within physical reality), while
+<em>consciousness</em> — the ability to know — is the non-physical
+foundational component. This relocation resolves the Cartesian
+interaction problem, because the relationship between mind and brain is
+now a relationship within physical reality — between instruments and
+their substrate — rather than a relationship between physical and
+non-physical.</p>
+<h3 id="the-energy-analogy-definition-of-consciousness">2.2 The Energy
+Analogy — Definition of Consciousness</h3>
+<p>The definition of consciousness as the ability to know is constructed
+in deliberate analogy with physics’ definition of energy as the ability
+to do work (Feynman, Leighton, &amp; Sands, 1963). This analogy is
+structural, not merely illustrative.</p>
+<p>Energy is not a substance. It is not located in any particular place
+in itself. It is a fundamental property that manifests in many forms —
+kinetic, potential, thermal, electromagnetic — and is conserved across
+all transformations. The power of this definition lies precisely in its
+generality: it allows physicists to reason about energy across wildly
+different physical systems using a single unified concept.</p>
+<p>The definition of consciousness as the ability to know has the same
+structure and productive generality. It defines consciousness not as a
+thing but as a capacity — the fundamental capacity for knowing to occur.
+Like energy, it is not located in any particular being. Like energy, it
+manifests through different instruments in different ways. Like energy,
+it is foundational. And like the definition of energy, this definition
+is productive precisely because it applies uniformly across the full
+spectrum of beings and systems — from single-celled organisms to human
+beings — without modification.</p>
+<h3 id="against-existing-definitions">2.3 Against Existing
+Definitions</h3>
+<p>The definition proposed here stands in explicit contrast to the three
+dominant existing definitions of consciousness in the philosophical and
+scientific literature.</p>
+<p><strong>Against phenomenal definitions.</strong> The most common
+philosophical definition identifies consciousness with phenomenal
+experience — the felt, qualitative character of mental states, or qualia
+(Nagel, 1974; Chalmers, 1995). On this definition, consciousness is what
+it is like to have an experience. The present framework rejects this
+identification: phenomenal experience is what arises when consciousness
+— the ability to know — operates through instruments of knowledge. It is
+the output, not consciousness itself. Conflating consciousness with its
+expression through instruments is analogous to conflating electricity
+with the light it produces through a bulb. The ability is prior to its
+expression; the expression cannot define the ability.</p>
+<p><strong>Against functionalist definitions.</strong> Functionalist
+definitions identify consciousness with certain kinds of information
+processing or functional organization (Putnam, 1967; Dennett, 1991).
+These definitions face the hard problem precisely because they describe
+functional correlates of consciousness without explaining why any
+functional process gives rise to subjective experience. In the present
+framework, functional processes are physical processes — the operation
+of instruments of knowledge. They are the conditions under which
+consciousness expresses itself as experience, not consciousness itself.
+The hard problem does not arise within this framework because
+consciousness is never claimed to be produced by functional processes —
+it is foundational to them.</p>
+<p><strong>Against neural identity theories.</strong> Neural identity
+theories identify conscious states with brain states (Smart, 1959;
+Place, 1956). These theories face both the hard problem and the
+explanatory gap — the apparent impossibility of deriving subjective
+experience from objective neural description (Levine, 1983). In the
+present framework, brain states are physical expressions of instrument
+functioning — correlates of experience content, not producers of
+consciousness. The identification of consciousness with brain states is
+rejected on the same grounds as the identification of electricity with
+the conductor through which it flows.</p>
+<h3 id="seven-consequences-of-the-definition">2.4 Seven Consequences of
+the Definition</h3>
+<p>Seven important consequences follow directly and necessarily from the
+definition of consciousness as the foundational ability to know.</p>
+<p><strong>1. Omnipresence.</strong> If consciousness is the
+foundational ability to know — not produced by physical systems — then
+it is not concentrated in particular places or beings. It is everywhere
+and always present. The question is never whether consciousness is
+present, but whether instruments through which it can express as
+experience are present.</p>
+<p><strong>2. Unchanging nature.</strong> Consciousness does not
+develop, improve, or vary. What varies across beings and situations is
+the instruments of knowledge — not consciousness. Differences in
+conscious experience between a worm and a human being are differences in
+instruments, not differences in consciousness.</p>
+<p><strong>3. Non-possession.</strong> It is incorrect to say that a
+being possesses consciousness — as if it were something some beings have
+and others lack. Consciousness is universally present. The correct
+question is whether a being has instruments through which conscious
+experience can arise.</p>
+<p><strong>4. Non-agency.</strong> Consciousness does not act. It is the
+enabling ground of all action and all knowing — but it is not itself a
+cause in the physical sense. The brain, mind, and body act; instruments
+function; experience arises. Consciousness is the condition that makes
+knowing possible — not the agent that produces it.</p>
+<p><strong>5. Dissolution of the hard problem.</strong> The question is
+no longer the intractable “how does matter produce consciousness?” but
+the tractable “what are the conditions — what instrument configurations
+— under which the foundational ability to know expresses itself as
+experience?” This is a question science can meaningfully address.</p>
+<p><strong>6. Impossibility of direct experience of
+consciousness.</strong> Consciousness — as always the ground of knowing
+and never the object of knowing — cannot itself become an object of
+experience. Everything that can be experienced is, by definition, on the
+side of what is known — physical reality. Consciousness is always on the
+side of the knower. This is not a contingent limitation but a logical
+consequence of the definition.</p>
+<p><strong>7. Indestructibility.</strong> What is foundational and
+non-physical is not subject to physical processes of creation or
+destruction. Consciousness is neither created nor destroyed. This
+consequence will be relevant when considering the implications of the
+framework.</p>
+<h3 id="the-relationship-principle">2.5 The Relationship Principle</h3>
+<p>The relationship between the two fundamentals can be stated in a
+single precise principle:</p>
+<blockquote>
+<p>Everything that can be known, experienced, or perceived belongs to
+physical reality. Consciousness itself — the ability to know — is never
+an object of knowledge. It is always and only the ground of knowing.</p>
+</blockquote>
+<p>This principle draws a clear and fundamental boundary between the two
+components of reality. Physical reality — in all its forms — is the
+domain of everything that can be known. Consciousness is the domain of
+knowing itself — never on the side of what is known, always on the side
+of the knowing.</p>
+<p>An illuminating analogy: to see anything, light is required. Light is
+the enabling condition of vision — not simply another visible object
+alongside the objects it illuminates. Its presence is demonstrated by
+the visibility of objects, not by finding it as a separate object.
+Similarly, consciousness is demonstrated by the occurrence of experience
+— not by finding it as a separate object of experience.</p>
+<hr />
+<h2 id="the-instruments-of-knowledge">3. The Instruments of
+Knowledge</h2>
+<h3 id="the-distribution-problem">3.1 The Distribution Problem</h3>
+<p>If consciousness is omnipresent and equally present in all beings — a
+consequence that follows necessarily from its definition as the
+foundational ability to know — then a question immediately arises: why
+does conscious experience differ so vastly across different beings? Why
+does a human being have rich, complex, reflective experience while a
+simple organism has only rudimentary awareness, and a rock has no
+experience at all?</p>
+<p>This is what may be called the <em>distribution problem</em> of
+consciousness: the problem of explaining why experience is distributed
+so unequally across the natural world if consciousness is omnipresent.
+It is a problem that all foundationalist or panpsychist positions must
+answer. The present framework answers it through the concept of
+instruments of knowledge.</p>
+<p>The fundamental principle:</p>
+<blockquote>
+<p>The richness, complexity, and depth of any being’s conscious
+experience is determined entirely by the quality and development of its
+instruments of knowledge — not by any variation in consciousness
+itself.</p>
+</blockquote>
+<p>The analogy of electrical conductivity is instructive. Electricity is
+present throughout a circuit — but it flows and does useful work only
+through conductors. The quality and structure of the conductor
+determines the quality and character of what the electricity does — not
+the electricity itself. Similarly, consciousness is present everywhere —
+but it gives rise to experience only through instruments of knowledge,
+and the quality of those instruments determines the richness of
+experience. A rock has no instruments of knowledge. An amoeba has
+rudimentary ones. A human being has the most developed instruments
+currently known. The difference is entirely in the instruments — not in
+consciousness.</p>
+<h3 id="external-and-internal-instruments">3.2 External and Internal
+Instruments</h3>
+<p>Instruments of knowledge are divided into two fundamental
+categories.</p>
+<p><em>External instruments</em> are the sensory organs — eyes, ears,
+skin, nose, and tongue — through which a being receives input from the
+external world. Each external instrument receives a specific kind of
+input from the physical environment and transmits it inward for
+processing by the internal instruments.</p>
+<p><em>Internal instruments</em> are the mind and intellect — and they
+are the primary instruments of all experience. Their primacy over
+external instruments is demonstrated by two well-established
+observations.</p>
+<p>First, internal instruments can generate experience entirely
+independently of external input. Dream experience — vivid, detailed,
+emotionally rich — occurs during sleep when the gross sensory organs are
+inactive and receiving no external input (Hobson, 1988; Solms, 1997).
+The internal instruments function and generate full experience without
+any external contribution. This demonstrates that internal instruments
+are not dependent on external organs for their operation — they are the
+primary seat of experience.</p>
+<p>Second, without the active engagement of internal instruments,
+external input does not produce meaningful experience. The
+well-documented phenomenon of inattentional blindness demonstrates that
+stimuli physically present and impinging on the sensory organs are not
+consciously registered when internal attention is not directed toward
+them (Mack &amp; Rock, 1998; Simons &amp; Chabris, 1999). Experience is
+not an automatic consequence of external input — it requires the
+engagement of the internal instruments. Experience is, in the final
+analysis, always an internal event.</p>
+<h3 id="mind-and-intellect-two-distinct-functions">3.3 Mind and
+Intellect — Two Distinct Functions</h3>
+<p>The internal instruments consist of two distinct components — mind
+and intellect — that operate in constant collaboration but perform
+different functions.</p>
+<p><em>Mind</em> is the seat of emotions, dispositions, reactions, and
+accumulated tendencies. It is the domain of the felt orientation toward
+experience — what characterizes a being’s emotional and dispositional
+patterns across situations and over time. It is closer to what
+contemporary psychology identifies as affect (Zajonc, 1980; Lazarus,
+1982) or to Kahneman’s (2011) System 1 processing — fast, associative,
+emotionally laden, and dispositional.</p>
+<p><em>Intellect</em> is the seat of reasoning, learning,
+discrimination, judgment, and accumulated knowledge. It is the domain of
+cognitive structure — analysis, evaluation, and understanding. It
+corresponds more closely to what contemporary psychology identifies as
+cognition, and to Kahneman’s (2011) System 2 processing — slow,
+deliberate, evaluative, and knowledge-intensive.</p>
+<p><em>Memory</em> — the accumulated store of previous experience —
+supports both mind and intellect and gives experience its depth,
+context, and continuity. It is not a third instrument but the cumulative
+record of instrument functioning across a lifetime.</p>
+<p>This tripartite distinction — mind, intellect, and memory — has
+parallels in multiple philosophical and psychological traditions,
+including the classical Indian distinction between manas, buddhi, and
+chitta (Radhakrishnan &amp; Moore, 1957), and the contemporary
+dual-process theory of cognition (Kahneman, 2011). The present framework
+proposes this distinction not on the basis of these traditions but on
+the basis of functional analysis: mind and intellect are genuinely
+distinct in their operating characteristics, their developmental
+trajectories, and the kinds of experience they make possible.</p>
+<h3 id="the-spectrum-of-experience">3.4 The Spectrum of Experience</h3>
+<p>The instruments framework naturally accounts for the vast spectrum of
+conscious experience across forms of life. At the simplest end,
+single-celled organisms have only the most rudimentary proto-instruments
+— chemical sensitivity systems that allow minimal responsiveness to the
+environment — and correspondingly minimal experience. As biological
+complexity increases across evolutionary history — as nervous systems
+develop, as brains emerge and elaborate — the instruments become richer,
+more differentiated, and more capable of generating complex experience.
+At the most developed end currently known, the human brain supports the
+instruments of mind and intellect at a level that makes possible
+reflective self-awareness, abstract reasoning, aesthetic experience, and
+the full range of emotional life.</p>
+<p>Consciousness itself is equally present in all of these cases. The
+difference in experience is always a difference in instruments — never a
+difference in consciousness. This resolves the distribution problem
+without positing degrees or grades of consciousness — a posit that faces
+well-known difficulties (Chalmers, 1996, pp. 293-298).</p>
+<hr />
+<h2 id="the-brain-mind-relationship">4. The Brain-Mind Relationship</h2>
+<h3 id="substrate-rather-than-producer">4.1 Substrate Rather Than
+Producer</h3>
+<p>The central claim regarding the brain in this framework:</p>
+<blockquote>
+<p>The brain is the physical substrate through which the instruments of
+knowledge — mind and intellect — operate during embodied life. The brain
+does not produce mind or intellect. It supports them.</p>
+</blockquote>
+<p>This is not a rejection of neuroscience. The framework fully accepts
+all established findings regarding the neural correlates of mental
+states — the role of specific brain regions in emotional processing, the
+effects of neurotransmitters on cognition and mood, the consequences of
+brain damage for mental function. What the framework challenges is not
+the findings but the standard interpretive inference: that because
+mental states correlate with brain states, mental states are produced by
+brain states.</p>
+<p>Correlation is not production. The observation that mental activity
+correlates with neural activity is consistent with both a production
+relationship (brain produces mind) and a substrate relationship (brain
+supports mind). The question of which interpretation is correct is
+empirical — and the evidence, properly interpreted, favors the substrate
+relationship.</p>
+<h3 id="evidence-brain-plasticity">4.2 Evidence — Brain Plasticity</h3>
+<p>The brain’s capacity to reorganize after damage — to develop new
+neural pathways that restore functions previously disrupted — is
+well-established and extensively documented (Doidge, 2007; Merzenich,
+2013). What is less often noted is how difficult this phenomenon is to
+explain within a strict production model.</p>
+<p>If specific mental functions are produced by specific neural
+circuits, then destruction of those circuits should permanently
+eliminate the corresponding functions. The frequency of functional
+recovery following brain damage — particularly in younger brains, but
+documented in adults as well — suggests that mental functions are not
+identical to their neural implementations. Something about the function
+is not exhausted by the specific gross physical substrate that supported
+it.</p>
+<p>The substrate model explains this naturally: the brain reorganizes to
+support the function, because the function — belonging to the
+instruments of mind and intellect — has a degree of independence from
+any specific gross physical implementation. The instruments are not
+identical to their substrate; the substrate adapts to serve the
+instruments.</p>
+<p>This interpretation is further supported by the well-documented
+finding that sustained mental practice — deliberate learning,
+meditation, intensive skill development — produces measurable structural
+changes in the brain (Draganski et al., 2004; Maguire et al., 2000). The
+brain changes to accommodate the patterns of mind and intellect
+operating through it. This is substrate adapting to instrument — the
+organizing influence of the instruments on their gross physical
+support.</p>
+<h3 id="evidence-minimal-brain-cases">4.3 Evidence — Minimal Brain
+Cases</h3>
+<p>Lorber (1980) documented cases of individuals with severe
+hydrocephalus in whom cerebrospinal fluid had replaced much of the
+normal brain tissue. In striking cases, individuals with a small
+fraction of normal brain tissue were found to have normal or
+above-normal intelligence and apparently rich conscious experience.</p>
+<p>From a production model, this evidence is deeply puzzling. How can so
+little neural tissue produce so much mind? The production model provides
+no satisfying answer. The substrate model resolves this naturally: the
+brain does not produce the mind — it supports it. A smaller but
+adequately organized substrate can still be sufficient to support the
+instruments of knowledge, because the primary reality is the instruments
+— not the gross physical substrate.</p>
+<p>These cases do not prove the substrate model. But they constitute
+evidence that the production model faces genuine explanatory
+difficulties that the substrate model does not — and they establish that
+the substrate model is more parsimonious with respect to the full range
+of available evidence.</p>
+<h3 id="mutual-dependence-during-embodied-life">4.4 Mutual Dependence
+During Embodied Life</h3>
+<p>The substrate relationship is one of mutual dependence during
+embodied life — not a one-way dependence of brain on instruments. The
+brain provides the organized physical substrate through which mental
+functioning occurs; damage to the brain affects mental functioning
+because the substrate serves the instruments. At the same time, the
+instruments exert an organizing influence on the brain — which is why
+practice, learning, and sustained mental activity produce measurable
+changes in brain structure.</p>
+<p>This mutual dependence during embodied life is fully compatible with
+the claim that the instruments are not produced by the brain — just as
+the operation of a complex instrument through its physical medium does
+not require the medium to have produced the instrument.</p>
+<hr />
+<h2 id="the-hard-problem-dissolved">5. The Hard Problem — Dissolved</h2>
+<h3 id="the-standard-framing">5.1 The Standard Framing</h3>
+<p>The hard problem of consciousness (Chalmers, 1995) asks: why do
+physical processes give rise to subjective experience? Why is there
+something it is like to be a conscious being — rather than all
+information processing occurring without any felt inner quality?</p>
+<p>Within the standard materialist framework — where consciousness is
+assumed to be produced by physical processes — this question is
+genuinely hard. The explanatory gap between objective physical
+description and subjective experience appears, as Levine (1983) argued,
+to be unbridgeable in principle: no matter how complete our account of
+physical processes, the question of why these processes are accompanied
+by experience at all cannot be answered from within a physical
+description.</p>
+<h3 id="why-the-hard-problem-is-hard">5.2 Why the Hard Problem Is
+Hard</h3>
+<p>The present framework suggests that the hard problem is hard
+precisely because it begins from the wrong assumption. It assumes
+consciousness is on the side of the produced — an output of physical
+processes that needs to be explained. Within this assumption, the gap
+between physical process and subjective experience is indeed
+unbridgeable — because no account of physical processes, however
+detailed, can explain the emergence of a fundamentally different kind of
+thing from purely physical inputs.</p>
+<p>This is not a failure of scientific method or explanatory ambition.
+It is the consequence of a conceptual error at the foundation. When the
+question is posed as “how does matter produce consciousness?”, it has
+already built in an assumption — that consciousness is something matter
+produces — that the evidence does not establish and that generates
+intractability by construction.</p>
+<h3 id="dissolution-through-redefinition">5.3 Dissolution Through
+Redefinition</h3>
+<p>When consciousness is redefined as the foundational ability to know —
+rather than as the subjective experience produced by the brain — the
+hard problem dissolves.</p>
+<p>Consciousness does not arise from physical processes. Physical
+processes — the brain and the instruments of knowledge it supports — are
+the conditions under which the ever-present ability to know expresses
+itself as actual experience in a specific being. The explanatory
+challenge is no longer “how does matter produce something radically
+different from matter?” The challenge is “what conditions — what
+instrument configurations — allow the foundational ability to know to
+express itself as experience of a particular kind?”</p>
+<p>This is a genuine challenge — but it is a tractable one. It is the
+kind of question that empirical science can meaningfully address. And it
+points toward a research program that is more productive than the
+standard materialist one.</p>
+<p>This approach is consistent with Wittgenstein’s (1953) observation
+that many philosophical problems arise from confused formulation rather
+than genuine difficulties in the world — and that their resolution
+requires not a solution but a dissolution through better conceptual
+clarification. The hard problem, on this view, is not dissolved by
+ignoring it — it is dissolved by identifying the precise assumption that
+generates the intractability and replacing that assumption with one that
+makes the question tractable.</p>
+<h3 id="the-reframed-research-question">5.4 The Reframed Research
+Question</h3>
+<p>The reframing produces a concrete alternative research question:</p>
+<p><em>What are the conditions — the specific instrument configurations
+— under which the foundational ability to know expresses itself as
+experience of a particular quality and richness?</em></p>
+<p>This question has several important properties. It is empirical — it
+can in principle be investigated through the methods of neuroscience,
+psychology, and the study of mind. It is tractable — it does not require
+explaining how matter produces something fundamentally different from
+matter. And it is productive — it points toward specific research
+directions in the characterization of instruments of knowledge and their
+relationship to the brain.</p>
+<hr />
+<h2 id="the-neural-correlates-of-consciousness-reinterpreted">6. The
+Neural Correlates of Consciousness — Reinterpreted</h2>
+<h3 id="what-ncc-research-has-achieved">6.1 What NCC Research Has
+Achieved</h3>
+<p>The neural correlates of consciousness (NCC) research program has
+produced significant and genuine advances: identification of the global
+neuronal workspace (Baars, 1988; Dehaene &amp; Changeux, 2011), the role
+of thalamocortical dynamics (Tononi, 2004), the distinction between
+neural correlates of conscious and unconscious processing, the neural
+basis of attention and attentional selection, and much more. These are
+real scientific contributions.</p>
+<h3 id="what-ncc-research-has-not-achieved">6.2 What NCC Research Has
+Not Achieved</h3>
+<p>Despite these advances, NCC research has not answered the question it
+set out to answer: why does any physical process give rise to subjective
+experience at all? The findings identify correlates — physical processes
+that co-occur with particular conscious states — but do not and cannot
+explain why these physical processes are accompanied by experience at
+all. As Koch (2019, p. 4) candidly acknowledges, the question of why
+there is something it is like to be a conscious organism remains
+unanswered by the NCC program.</p>
+<h3 id="reinterpretation-correlates-of-experience-content">6.3
+Reinterpretation — Correlates of Experience Content</h3>
+<p>The framework proposed here offers a precise reinterpretation of what
+NCC research has actually been finding.</p>
+<p>NCC research has been mapping the neural correlates of <em>experience
+content</em> — the brain activity associated with particular kinds of
+experience (visual, auditory, emotional, cognitive, attentional). It has
+been identifying which physical processes are present when particular
+kinds of mental content arise. This is a genuinely valuable scientific
+undertaking.</p>
+<p>What NCC research has not been, and cannot be, mapping is the neural
+correlates of <em>knowing itself</em> — because knowing is enabled by
+consciousness, which is not a physical process and does not have neural
+correlates in the ordinary sense.</p>
+<p>The reinterpretation does not invalidate NCC research. It gives it a
+more accurate description of what it has achieved and a clearer
+indication of what lies outside its scope. The study of experience
+content — of what brain activity produces what kinds of mental content
+in instruments of knowledge — is a productive and important research
+program. Understanding that this is what NCC research studies, rather
+than the cause of knowing itself, is an advance in clarity rather than a
+diminishment.</p>
+<p>A terminological note that has practical consequence for the research
+programme:</p>
+<p>The phrase “neurological basis of consciousness” — ubiquitous in the
+literature — is, within this framework, a category error. Consciousness
+is non-physical; it does not have a neurological basis in the production
+sense. What neuroscience has mapped, and continues to map with
+increasing precision, is the neurological basis of the <em>internal
+instruments of knowledge</em> — the mind and intellect in their physical
+substrate. The brain processes that correlate with conscious states are
+the substrate of the instruments, not the substrate of consciousness
+itself.</p>
+<p>The proposed re-labeling: “neurological basis of knowing instruments”
+or, more precisely, “neurological basis of internal instrument
+function.” This is not merely a semantic preference. The re-labeling
+correctly identifies what is being measured — and distinguishes this
+framework’s predictions from all production-framework predictions, which
+expect to find the basis of consciousness itself in neural activity and
+have found, instead, the basis of instrument function.</p>
+<h3 id="implication-for-the-ncc-program">6.4 Implication for the NCC
+Program</h3>
+<p>The clearest implication for the NCC research program is this: the
+search for the “minimal neural correlate of consciousness” — the
+smallest neural system whose activity is sufficient for any conscious
+experience at all — is a search for the minimal brain configuration that
+can support the instruments of knowledge sufficiently for experience to
+arise. This is a legitimate and tractable research question. But it is a
+different question than “what neural activity produces consciousness” —
+because consciousness is not produced by any neural activity. Neural
+activity produces and sustains the physical conditions that allow the
+instruments of knowledge to function — and through functioning
+instruments, consciousness expresses as experience.</p>
+<hr />
+<h2 id="relationship-to-existing-theories-of-consciousness">7.
+Relationship to Existing Theories of Consciousness</h2>
+<h3 id="integrated-information-theory">7.1 Integrated Information
+Theory</h3>
+<p>Integrated Information Theory (IIT), developed by Tononi (2004,
+2016), proposes that consciousness is identical to integrated
+information — quantified as phi (Φ) — a measure of how much information
+is generated by a system as a whole above and beyond its parts. On this
+view, consciousness is present wherever Φ is greater than zero, varies
+continuously with Φ, and is fully characterized by the mathematical
+structure of a system’s intrinsic causal power.</p>
+<p>The present framework converges with IIT in one fundamental respect:
+both resist the identification of consciousness with any particular
+physical substrate — IIT holds that consciousness is substrate-
+independent (any system with the right causal structure has the
+corresponding experience), and the present framework holds that
+consciousness is omnipresent and not produced by any substrate.</p>
+<p>The frameworks diverge, however, on two central points. First, IIT
+defines consciousness as phenomenal experience — specifically as the
+intrinsic existence of a maximally irreducible causal structure. The
+present framework defines consciousness as the ability to know — prior
+to and independent of any experience. Experience is what arises when
+consciousness operates through instruments; it is the consequence, not
+the thing defined. Second, IIT faces the “exclusion axiom” problem: if Φ
+is present at multiple levels of a system simultaneously, IIT must
+choose which level “has” consciousness — a choice that seems arbitrary
+(Aaronson, 2014). The present framework does not face this problem
+because it does not identify consciousness with any physical measure;
+consciousness is simply present, and it is the instruments that
+vary.</p>
+<h3 id="global-workspace-theory">7.2 Global Workspace Theory</h3>
+<p>Global Workspace Theory (GWT), developed by Baars (1988) and extended
+by Dehaene &amp; Changeux (2011), proposes that conscious experience
+arises when information is broadcast widely across the brain via a
+global neuronal workspace — making it available to a wide range of
+cognitive processes. On this view, consciousness is, roughly, global
+availability of information for cognitive use.</p>
+<p>The present framework reinterprets GWT’s findings rather than
+rejecting them. The global broadcast mechanism identified by GWT may
+well be a good description of what happens in the brain when the
+instruments of knowledge are actively engaged and experience arises. GWT
+describes the physical correlates of instrument functioning — the neural
+basis of what the mind and intellect do when experience is generated.
+What GWT does not and cannot explain, within its own terms, is why
+global broadcast is accompanied by experience at all — rather than
+simply occurring “in the dark.” This is the hard problem reasserting
+itself within the GWT framework. The present framework dissolves this
+residual hard problem by the same move applied in Section 5:
+consciousness is not produced by global broadcast. Global broadcast is
+the physical process through which the instruments of knowledge are
+engaged and experience arises. Consciousness is the ever-present
+enabling ground of all such experience.</p>
+<h3 id="higher-order-theories">7.3 Higher-Order Theories</h3>
+<p>Higher-Order Theories (HOT) of consciousness, developed most fully by
+Rosenthal (2005), propose that a mental state is conscious when it is
+the object of an appropriate higher-order representation — a thought or
+perception of the first-order mental state. On this view, what makes
+experience conscious is its being represented at a higher cognitive
+level.</p>
+<p>The present framework diverges from HOT on fundamental grounds. HOT
+locates what makes experience conscious in a representational
+relationship between mental states — a relationship that is itself a
+physical (functional) process within the instruments of knowledge. But
+this generates an infinite regress: what makes the higher-order
+representation itself conscious? And it presupposes that consciousness
+is something that needs to be added to mental states — that there are
+unconscious mental states that become conscious when appropriately
+represented. In the present framework, this whole apparatus is
+unnecessary. The question “what makes a mental state conscious?” does
+not arise in the same form: consciousness is the ever-present enabling
+ground of all knowing; what varies is the richness and complexity of
+experience, which is determined by the instruments — not by
+representational relationships between their states.</p>
+<h3 id="property-dualism">7.4 Property Dualism</h3>
+<p>Property dualism — the position that mental properties are not
+reducible to physical properties, though they depend on physical
+substrates (Chalmers, 1996; Jackson, 1982) — is closer to the present
+framework than eliminative materialism or reductive physicalism.
+Property dualism shares the insistence on the irreducibility of mental
+to physical.</p>
+<p>The present framework diverges from property dualism in a significant
+respect. Property dualism typically holds that mental properties are
+non-physical properties of physical systems — generating the threat of
+epiphenomenalism: if mental properties are non-physical, how can they
+exert causal efficacy in a physical world (Kim, 1993)? The present
+framework avoids this entirely by locating the non-physical component
+precisely at consciousness — the ability to know — while classifying
+mind and intellect as physical (instruments of knowledge within physical
+reality). Mind and intellect are physical, so they exert causal efficacy
+without any problem. Consciousness is non-physical, but it does not need
+to exert causal efficacy — it is the enabling ground of knowing, not a
+causal agent.</p>
+<h3 id="panpsychism">7.5 Panpsychism</h3>
+<p>Panpsychism — the position that consciousness or proto-conscious
+properties are fundamental features of all physical reality (Goff, 2019;
+Strawson, 2006; Chalmers, 2010) — shares the present framework’s
+insistence that consciousness is foundational rather than emergent.</p>
+<p>The frameworks diverge on a point that is structural and important.
+Panpsychism typically holds that consciousness is a property <em>of
+physical things</em> — that physical reality is intrinsically
+experiential, that micro-level physical constituents have some form of
+experience or proto- experience, and that macro-level experience results
+from the combination of micro-level experiences. This generates the
+combination problem: how do micro-level experiential properties combine
+to produce unified macro-level experience (Chalmers, 2010)?</p>
+<p>The present framework holds that consciousness is not a property of
+physical things. Physical things — instruments of knowledge — are the
+conditions through which consciousness expresses itself as experience.
+Physical things are not intrinsically conscious; they are the channels
+through which the foundational ability to know expresses as experience
+when suitably organized. The combination problem does not arise because
+there is nothing to combine: consciousness is singular and omnipresent —
+it is not aggregated from parts.</p>
+<h3 id="quantum-theories-of-consciousness">7.6 Quantum Theories of
+Consciousness</h3>
+<p>Several serious physicists and philosophers have proposed, from
+within physics, that classical physics is insufficient to account for
+consciousness — and that a deeper level of physical reality must be
+involved.</p>
+<p><em>Penrose and Hameroff (Orchestrated Objective Reduction)</em>
+argued that consciousness involves non-computable processes and proposed
+quantum processes in microtubules as their physical basis (Penrose,
+1989; Penrose &amp; Hameroff, 1994, 2014). The convergence with the
+present framework: both recognize that consciousness transcends
+classical computational description. The divergence: Orch OR remains a
+production model — it still asks how specific physical processes in the
+brain produce consciousness. The present framework begins from the
+opposite direction.</p>
+<p><em>Bohm (Implicate Order)</em> proposed that reality has deeper
+levels beneath observable quantum events, and insisted that
+consciousness is woven into the fabric of reality — not produced by it
+(Bohm, 1980). This is the closest parallel in physics to the present
+framework. The convergence is genuine and significant: both propose that
+consciousness is fundamental, not emergent.</p>
+<p><em>Stapp (Observer and Quantum Collapse)</em> argued that the
+observer cannot be eliminated from the foundations of quantum mechanics
+— that consciousness has a genuine causal role in physical reality
+(Stapp, 1993). The convergence: the observer is genuinely fundamental.
+The present framework begins exactly where Stapp’s analysis reaches its
+limit — investigating what the observer actually is.</p>
+<p>The convergence of these independent lines of inquiry — one developed
+from inside through consciousness reasoning, one developed from outside
+through physics — is noted as significant without claiming identity.
+These convergences suggest the direction of inquiry is not eccentric but
+independently motivated.</p>
+<hr />
+<h2 id="implications">8. Implications</h2>
+<h3 id="personal-identity">8.1 Personal Identity</h3>
+<p>If consciousness is omnipresent and unchanging — not a property of
+any individual being but the universal enabling ground of all knowing —
+then what does “my consciousness” mean?</p>
+<p>On the present framework, personal identity is not located in
+consciousness. It is located in the instruments of knowledge — the
+specific mind, intellect, and accumulated memory that constitute the
+particular character and history of this being. “My consciousness” is a
+natural way of speaking that abbreviates something more precise: the
+conscious experience that arises when consciousness operates through my
+instruments of knowledge. The consciousness is universal; the
+instruments are particular. What makes me <em>me</em> is the instruments
+— not consciousness.</p>
+<p>This has an important implication: the question “is my consciousness
+the same as your consciousness?” is not well-formed. There is one
+consciousness — omnipresent and undivided. What differs between persons
+is instruments — and through different instruments, consciousness gives
+rise to different experiences.</p>
+<h3 id="artificial-consciousness">8.2 Artificial Consciousness</h3>
+<p>Whether artificial systems can be conscious is, within the present
+framework, the question of whether they can have instruments of
+knowledge — instruments through which the ever-present ability to know
+can express as experience.</p>
+<p>This is not obviously a question with a predetermined “no” answer.
+The framework does not restrict instruments of knowledge to biological
+systems or carbon-based substrates. The question is functional and
+structural: does the system have organized internal structures that can
+serve the functions of mind and intellect — emotional orientation toward
+experience, cumulative learning, discrimination and judgment?</p>
+<p>The present framework, however, identifies two specific structural
+features of current artificial systems that constitute significant
+obstacles to this question being answered affirmatively — at least for
+the architectures that dominate the current AI landscape.</p>
+<p><strong>8.2.1 The Representation Problem</strong></p>
+<p>Current AI systems — including large language models, vision models,
+and multimodal systems — operate on discrete digital representations of
+the world. Images are converted into grids of pixel values or patch
+embeddings. Text is tokenized into discrete units. Audio is represented
+as spectral features or numerical encodings. All inputs are discretized
+before processing begins.</p>
+<p>Biological instruments of knowledge do not operate this way. The
+external instruments — sensory organs — process continuous analog
+signals from the environment. The internal instruments — mind and
+intellect — operate on the continuous stream of processed experience,
+shaped by millions of years of evolutionary refinement. There is no
+discretization step; the world is not converted into a format before it
+is processed. The instrument and the signal it processes have
+co-evolved.</p>
+<p>This discretization gap is not a technical implementation detail that
+future engineering will close. It represents a fundamental difference in
+the kind of processing the instruments perform. Whether continuous
+analog processing is a necessary condition for the kind of instrument
+organization that supports experience — rather than merely an incidental
+feature of biological systems — is a genuine empirical question the
+framework raises. But the gap itself is real and architecturally
+deep.</p>
+<p><strong>8.2.2 Solidified Knowledge vs. Living Knowing</strong></p>
+<p>Current large language models are trained on vast data corpora; this
+training process converges on a fixed configuration of mathematical
+weights. At inference time, a query passes through these pre-trained
+weights and an output is generated. The weights do not update during
+this process. The system does not learn, does not accumulate new
+instrument development, does not engage in a living act of knowing in
+response to the query.</p>
+<p>The instruments of knowledge, as characterized in this framework, are
+not static repositories. They are active, adaptive structures through
+which knowing continuously occurs. The mind integrates incoming
+experience with prior states; the intellect discriminates and judges in
+real time. There is a living, moment-to-moment process of knowing — not
+retrieval from a frozen store.</p>
+<p>A large language model is, in this sense, solidified knowledge:
+knowledge accumulated during training, crystallized into fixed weights,
+and queried. The remarkable outputs such systems produce reflect the
+depth of the frozen knowledge, not the presence of a living knowing
+process. Under the present framework’s account of what instruments are
+and how they function, this architecture does not constitute the kind of
+instrument through which consciousness expresses as experience.</p>
+<p><strong>8.2.3 Implications</strong></p>
+<p>These two arguments are distinct and cumulative. The representation
+problem concerns the kind of signal the instrument processes. The
+solidified-knowledge argument concerns whether the processing
+constitutes a living act of knowing at all. Both point toward the same
+conclusion: current AI architectures, whatever their functional
+sophistication, do not have instruments of knowledge in the sense the
+framework requires.</p>
+<p>The term “artificial consciousness” — if it is to be used at all —
+should be understood as analogous to “artificial intelligence”: a
+functional approximation to the real phenomenon, not the phenomenon
+itself. An AI system may behave in ways that resemble conscious behavior
+without having the underlying instruments through which consciousness
+expresses as experience.</p>
+<p>This does not settle the question of whether any future artificial
+architecture could have genuine instruments. The framework does not rule
+this out in principle. But it identifies the specific structural
+requirements — continuous analog instrument processing, living (not
+frozen) knowing — that any such architecture would need to satisfy.
+These are substantive requirements, not merely definitional ones, and
+they point toward research questions that the field has not yet
+seriously formulated.</p>
+<p>Even in the best-case scenario for future AI development — a system
+that somehow satisfied both requirements — the appropriate label would
+be “artificial consciousness” in exactly the same sense that current
+systems embody “artificial intelligence”: a functional analogue to the
+real phenomenon, not the phenomenon itself. Just as artificial
+intelligence is not intelligence in the full sense that human knowing is
+— it is a powerful simulation of intelligence’s outputs — artificial
+consciousness would not be consciousness in the foundational sense this
+framework defines. It would be a system engineered to produce the
+functional outputs of consciousness without instantiating the ability to
+know as a foundational non-physical reality. The distinction is not
+merely semantic. It reflects the difference between mimicking the
+behavior of an ability and actually having it.</p>
+<h3 id="animal-consciousness">8.3 Animal Consciousness</h3>
+<p>The instruments framework supports a strong and principled position
+on animal consciousness: all beings with any instruments of knowledge
+have some form of experience, and the richness of that experience scales
+with instrument sophistication. The question is not whether non-human
+animals are conscious — they are, to the degree their instruments allow
+— but what quality and richness of experience their instruments
+support.</p>
+<p>This removes the sharp human/non-human boundary that persists in much
+of the philosophical literature and replaces it with a continuous
+spectrum. Complex mammals — with highly developed mind and some degree
+of intellect — have rich and varied experience. Simpler organisms have
+simpler experience. The question of consciousness in animals is not
+yes/no but a matter of degree, determined by the character of their
+instruments.</p>
+<hr />
+<h2 id="new-research-directions-and-testable-questions">9. New Research
+Directions and Testable Questions</h2>
+<h3 id="instrument-characterization">9.1 Instrument
+Characterization</h3>
+<p>The properties of mind and intellect as instruments of knowledge —
+their functional organization, developmental trajectory across a
+lifetime, pathological variants, and relationship to the brain’s neural
+architecture — constitute a research agenda that is distinct from,
+though complementary to, standard neuroscientific research. Standard
+neuroscience investigates brain structure and function as the primary
+object. Instrument characterization research would investigate mind and
+intellect as the primary object — treating brain findings as evidence
+about the substrate rather than evidence about the instruments
+themselves.</p>
+<p>Testable question: Are there functional properties of mind and
+intellect that cannot be fully predicted from brain structure alone —
+properties that, on the substrate model, would reflect the instruments’
+organization rather than the brain’s?</p>
+<h3 id="the-substrate-instrument-relationship">9.2 The
+Substrate-Instrument Relationship</h3>
+<p>The specific mechanisms by which the brain functions as substrate for
+mind and intellect — how the brain reorganizes to serve the instruments,
+how damage to the substrate affects the instruments, what minimal
+substrate organization is required to support particular instrument
+functions — are tractable empirical questions.</p>
+<p>Testable question: Do patterns of neural plasticity following brain
+damage reflect the organizing influence of the instruments on the
+substrate — and can this be distinguished from plasticity driven purely
+by local gross physical reorganization mechanisms?</p>
+<h3 id="altered-states-and-instrument-states">9.3 Altered States and
+Instrument States</h3>
+<p>Deep meditation, deep sleep, anesthesia, and psychedelic states
+produce systematic changes in conscious experience. The framework makes
+a specific prediction about these states: they correspond to systematic
+changes in the <em>state of the instruments of knowledge</em> — their
+engagement, direction, or mode of functioning — rather than changes in
+consciousness itself. Consciousness is unchanged; what changes is the
+instrument state.</p>
+<p>Testable question: Can the systematic phenomenological changes
+produced by altered states be fully mapped onto instrument state changes
+(changes in mind, intellect, and attentional function) — without
+requiring any change in the enabling condition of knowing itself?</p>
+<h3 id="minimum-instrument-complexity-for-experience">9.4 Minimum
+Instrument Complexity for Experience</h3>
+<p>The framework predicts that experience arises wherever instruments of
+knowledge are present — however rudimentary. The question of what
+minimum instrument complexity is required for experience to arise is a
+genuine empirical question — one that current science has not
+systematically addressed because the dominant framework has no
+theoretical basis for asking it.</p>
+<p>Testable question: Is there a threshold of instrument complexity
+below which no experience arises — and if so, what characterizes that
+threshold in terms of functional organization rather than physical
+substrate?</p>
+<h3 id="attention-as-instrument-direction">9.5 Attention as Instrument
+Direction</h3>
+<p>The framework characterizes attention as the mind’s mechanism for
+selecting what content becomes experience — attention is the direction
+in which the instruments are oriented at any given moment. This
+characterization generates a specific research direction: investigating
+attention as a property of the instruments rather than as a property of
+consciousness.</p>
+<p>Testable question: Can attentional failures — inattentional
+blindness, attentional blink, neglect syndromes — be more fully
+explained as failures of instrument direction than as failures of neural
+processing alone?</p>
+<h3 id="the-spectrum-of-instrument-sophistication-across-species">9.6
+The Spectrum of Instrument Sophistication Across Species</h3>
+<p>The instruments framework predicts a continuous spectrum of
+experience across species, correlated with instrument sophistication.
+Systematic comparative study of instrument-relevant capacities across
+species — emotional range, learning capacity, self-directed behavior,
+meta-cognitive indicators — would provide evidence for or against this
+prediction.</p>
+<p>Testable question: Does the cross-species gradient of
+instrument-relevant capacities (emotional range, learning,
+discrimination, behavioral flexibility) correlate with the gradient of
+experience- indicative behaviors more tightly than the gradient of brain
+size or complexity alone?</p>
+<h3 id="the-ontological-status-of-knowing-events">9.7 The Ontological
+Status of Knowing Events</h3>
+<p><strong>The Ontological Status of Knowing Events.</strong> The
+framework identifies consciousness and physical reality as co-existing
+fundamentals, and instruments as the physical basis of experience. But
+the precise nature of a knowing event — what occurs at the interface
+between the functioning instrument and the enabling condition of
+consciousness — remains unresolved within the current formulation. Are
+knowing events purely physical processes that the presence of
+consciousness makes possible? Or does something emerge at the interface
+— neither purely physical nor purely the foundational ability, but the
+event of knowing as a distinct category? This is the theory’s own
+deepest open question, acknowledged explicitly as the next frontier for
+the programme it opens.</p>
+<hr />
+<h2 id="conclusion">10. Conclusion</h2>
+<p>The framework proposed in this paper — defining consciousness as the
+foundational ability to know, and the brain as the substrate through
+which instruments of knowledge operate — offers a philosophically
+precise and scientifically compatible alternative to standard
+materialist accounts of consciousness.</p>
+<p>The framework makes a single foundational move — redefining
+consciousness as ability rather than experience — and seven consequences
+follow necessarily from it. The hard problem dissolves through
+redefinition rather than through solution. The NCC research program is
+reinterpreted as mapping the correlates of experience content rather
+than the cause of knowing. The distribution problem of consciousness —
+why experience is so unequal if consciousness is omnipresent — is
+resolved by the instruments of knowledge framework without requiring
+degrees of consciousness. And the framework converges independently,
+from inside through consciousness reasoning, with the direction of the
+most advanced quantum theories of consciousness — which arrived at the
+same structural boundary from outside through physics.</p>
+<p>Positioned relative to existing theories: the framework dissolves
+IIT’s need for a consciousness measure by separating the ability to know
+from the quality of experience; it reinterprets GWT’s global broadcast
+findings as describing instrument engagement rather than the production
+of consciousness; it avoids the combination problem of panpsychism by
+making consciousness singular and omnipresent rather than distributed in
+micro-experiential parts; and it resolves property dualism’s
+epiphenomenalism threat by locating the non-physical component at the
+level of consciousness (the enabling ground, not a causal agent) while
+keeping mind and intellect physical.</p>
+<p>The framework is honest about what it does not yet know. The precise
+functional organization of the instruments of knowledge as entities
+distinct from their neural substrate remains to be characterized. The
+minimum conditions for experience remain unknown. The mechanism by which
+the instruments interface with the gross physical brain is an open
+question. These are not failures — they are the open questions that
+define a productive research agenda.</p>
+<p>The central claim can be stated simply: consciousness is the ability
+to know, and it is foundational. Experience is the consequence of the
+ability operating through instruments. Everything else — every form of
+experience, every kind of mind, every richness of knowing — follows from
+this single, precisely defined starting point.</p>
+<hr />
+<h2 id="references">References</h2>
+<p>Aaronson, S. (2014). Why I am not an integrated information theorist
+(or, the unconscious expander). <em>Shtetl-Optimized</em> (blog).
+Retrieved from https://scottaaronson.blog/?p=1799</p>
+<p>Baars, B.J. (1988). <em>A Cognitive Theory of Consciousness</em>.
+Cambridge University Press.</p>
+<p>Bohm, D. (1980). <em>Wholeness and the Implicate Order</em>.
+Routledge.</p>
+<p>Chalmers, D.J. (1995). Facing up to the problem of consciousness.
+<em>Journal of Consciousness Studies</em>, 2(3), 200-219.</p>
+<p>Chalmers, D.J. (1996). <em>The Conscious Mind: In Search of a
+Fundamental Theory</em>. Oxford University Press.</p>
+<p>Chalmers, D.J. (2010). The combination problem for panpsychism. In G.
+Brüntrup &amp; L. Jaskolla (Eds.), <em>Panpsychism: Contemporary
+Perspectives</em>. Oxford University Press.</p>
+<p>Dehaene, S. (2014). <em>Consciousness and the Brain: Deciphering How
+the Brain Codes Our Thoughts</em>. Viking.</p>
+<p>Dehaene, S., &amp; Changeux, J.P. (2011). Experimental and
+theoretical approaches to conscious processing. <em>Neuron</em>, 70(2),
+200-227.</p>
+<p>Dennett, D.C. (1991). <em>Consciousness Explained</em>. Little, Brown
+and Company.</p>
+<p>Descartes, R. (1641/1984). <em>Meditations on First Philosophy</em>
+(J. Cottingham, Trans.). Cambridge University Press.</p>
+<p>Doidge, N. (2007). <em>The Brain That Changes Itself</em>.
+Viking.</p>
+<p>Draganski, B., et al. (2004). Neuroplasticity: Changes in grey matter
+induced by training. <em>Nature</em>, 427, 311-312.</p>
+<p>Feynman, R.P., Leighton, R.B., &amp; Sands, M. (1963). <em>The
+Feynman Lectures on Physics</em> (Vol. 1). Addison-Wesley.</p>
+<p>Goff, P. (2019). <em>Galileo’s Error: Foundations for a New Science
+of Mind</em>. Pantheon.</p>
+<p>Hobson, J.A. (1988). <em>The Dreaming Brain</em>. Basic Books.</p>
+<p>Jackson, F. (1982). Epiphenomenal qualia. <em>Philosophical
+Quarterly</em>, 32(127), 127-136.</p>
+<p>Kahneman, D. (2011). <em>Thinking, Fast and Slow</em>. Farrar, Straus
+and Giroux.</p>
+<p>Kim, J. (1993). <em>Supervenience and Mind</em>. Cambridge University
+Press.</p>
+<p>Koch, C. (2019). <em>The Feeling of Life Itself: Why Consciousness Is
+Widespread but Can’t Be Computed</em>. MIT Press.</p>
+<p>Lazarus, R.S. (1982). Thoughts on the relations between emotion and
+cognition. <em>American Psychologist</em>, 37(9), 1019-1024.</p>
+<p>Levine, J. (1983). Materialism and qualia: The explanatory gap.
+<em>Pacific Philosophical Quarterly</em>, 64(4), 354-361.</p>
+<p>Lorber, J. (1980). Is your brain really necessary? <em>Science</em>,
+210(4475), 1232-1234.</p>
+<p>Mack, A., &amp; Rock, I. (1998). <em>Inattentional Blindness</em>.
+MIT Press.</p>
+<p>Maguire, E.A., et al. (2000). Navigation-related structural change in
+the hippocampi of taxi drivers. <em>Proceedings of the National Academy
+of Sciences</em>, 97(8), 4398-4403.</p>
+<p>Merzenich, M. (2013). <em>Soft-Wired: How the New Science of Brain
+Plasticity Can Change Your Life</em>. Parnassus Publishing.</p>
+<p>Nagel, T. (1974). What is it like to be a bat? <em>Philosophical
+Review</em>, 83(4), 435-450.</p>
+<p>Penrose, R. (1989). <em>The Emperor’s New Mind</em>. Oxford
+University Press.</p>
+<p>Penrose, R., &amp; Hameroff, S. (1994). Orchestrated reduction of
+quantum coherence in brain microtubules. <em>Mathematics and Computers
+in Simulation</em>, 40(3-4), 453-480.</p>
+<p>Penrose, R., &amp; Hameroff, S. (2014). Consciousness in the
+universe: A review of the ‘Orch OR’ theory. <em>Physics of Life
+Reviews</em>, 11(1), 39-78.</p>
+<p>Place, U.T. (1956). Is consciousness a brain process? <em>British
+Journal of Psychology</em>, 47(1), 44-50.</p>
+<p>Putnam, H. (1967). Psychological predicates. In W.H. Capitan &amp;
+D.D. Merrill (Eds.), <em>Art, Mind, and Religion</em>. University of
+Pittsburgh Press.</p>
+<p>Radhakrishnan, S., &amp; Moore, C.A. (Eds.). (1957). <em>A Sourcebook
+in Indian Philosophy</em>. Princeton University Press.</p>
+<p>Rosenthal, D.M. (2005). <em>Consciousness and Mind</em>. Oxford
+University Press.</p>
+<p>Simons, D.J., &amp; Chabris, C.F. (1999). Gorillas in our midst:
+Sustained inattentional blindness for dynamic events.
+<em>Perception</em>, 28(9), 1059-1074.</p>
+<p>Smart, J.J.C. (1959). Sensations and brain processes.
+<em>Philosophical Review</em>, 68(2), 141-156.</p>
+<p>Solms, M. (1997). <em>The Neuropsychology of Dreams</em>. Lawrence
+Erlbaum Associates.</p>
+<p>Stapp, H.P. (1993). <em>Mind, Matter and Quantum Mechanics</em>.
+Springer.</p>
+<p>Strawson, G. (2006). Realistic monism: Why physicalism entails
+panpsychism. <em>Journal of Consciousness Studies</em>, 13(10-11),
+3-31.</p>
+<p>Tononi, G. (2004). An information integration theory of
+consciousness. <em>BMC Neuroscience</em>, 5, 42.</p>
+<p>Tononi, G., et al. (2016). Integrated information theory: From
+consciousness to its physical substrate. <em>Nature Reviews
+Neuroscience</em>, 17(7), 450-461.</p>
+<p>Wittgenstein, L. (1953). <em>Philosophical Investigations</em>
+(G.E.M. Anscombe, Trans.). Blackwell.</p>
+<p>Zajonc, R.B. (1980). Feeling and thinking: Preferences need no
+inferences. <em>American Psychologist</em>, 35(2), 151-175.</p>
+</body>
+</html>
