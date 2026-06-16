@@ -7,6 +7,14 @@ Format: ## [version] — YYYY-MM-DD
 
 ---
 
+## [0.3.0] — 2026-06-15
+
+- Added functional blind spot argument (ch04, essays, whitepaper): consciousness cannot observe its own mechanism without using that mechanism — a structural limitation, not an empirical gap
+- Added bliss-happiness-suffering theory (ch05, ch12, ch13, essays, whitepaper): bliss is the natural state of Ability; happiness/suffering arise from Capacity conditions
+- Separated framework from evidence; added convergent evidence essay
+- Replaced "beyond space and time" with "not reducible to spatial-temporal properties" for precision
+- Regenerated audio for all affected chapters and documents
+
 ## [0.2.0] — 2026-06-03
 
 - Revised prose in chapters 4, 6, 7 for philosophical precision
