@@ -204,6 +204,49 @@
   .author { font-size: 1.2em; color: #555; margin-top: 0.5em; }
   .back-link { display: inline-block; margin-bottom: 2em; font-size: 0.9em; color: #555; text-decoration: none; border-bottom: 1px solid #ccc; }
   .back-link:hover { color: #000; }
+
+  /* Book front matter pages */
+  .book-title-page {
+    text-align: center;
+    padding-top: 2.5in;
+  }
+  .book-title-page h1 { font-size: 3em; border-bottom: none; margin-top: 0; }
+  .book-title-page h2 { font-size: 1.5em; color: #444; margin-top: 0.5em; }
+  .book-title-page p { margin: 0.8em 0; }
+  .book-copyright-page { font-size: 0.9em; }
+  .book-copyright-page p { margin: 0.6em 0; }
+
+  @media print {
+    @page {
+      size: letter;
+      margin: 1in 1in 1.2in 1in;
+    }
+    body {
+      font-size: 11pt;
+      line-height: 1.6;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+    .back-link { display: none; }
+    #title-block-header { display: none; }
+    .book-title-page {
+      page-break-after: always;
+      padding-top: 3in;
+    }
+    .book-title-page h1 { page-break-before: avoid; font-size: 3.2em; }
+    .book-copyright-page {
+      page-break-after: always;
+    }
+    nav#TOC {
+      background: none;
+      border: none;
+      page-break-after: always;
+    }
+    nav#TOC::before { content: "Contents"; display: block; font-size: 1.8em; font-weight: bold; margin-bottom: 1em; font-family: Georgia, serif; }
+    h1 { page-break-before: always; border-bottom: 1px solid #ccc; }
+    h1:first-of-type { page-break-before: avoid; }
+  }
   </style>
   <p><a class="back-link" href="index.html">← Back to CoFA home</a></p>
 </head>
