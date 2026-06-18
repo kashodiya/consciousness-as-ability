@@ -7,6 +7,10 @@ Format: ## [version] — YYYY-MM-DD
 
 ---
 
+## [0.4.0] — 2026-06-17
+
+Update ch03, essays, and whitepaper content and audio
+
 ## [0.3.0] — 2026-06-15
 
 - Added functional blind spot argument (ch04, essays, whitepaper): consciousness cannot observe its own mechanism without using that mechanism — a structural limitation, not an empirical gap
