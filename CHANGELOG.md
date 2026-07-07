@@ -7,6 +7,17 @@ Format: ## [version] — YYYY-MM-DD
 
 ---
 
+## [0.5.0] — 2026-07-06
+
+- Switched TTS engine from edge-tts to AWS Polly (Brian neural voice, 90% speed) for higher quality audio
+- Updated chapter 4, long essay, short essay, evidence essay, and whitepaper with refined content
+- Regenerated all audio files with new Polly voice
+- Added convergent evidence essay content enhancements
+
+## [0.4.1] — 2026-06-17
+
+Move measurement paragraph for better flow in essay-short
+
 ## [0.4.0] — 2026-06-17
 
 Update ch03, essays, and whitepaper content and audio
