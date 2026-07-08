@@ -7,6 +7,17 @@ Format: ## [version] — YYYY-MM-DD
 
 ---
 
+## [0.6.0] — 2026-07-07
+
+- Integrated Adrian Owen's vegetative-state experiment as lead evidence for brain-as-interface across all source documents
+- New section in evidence essay: "Covert Consciousness — Mind Behind a Silent Brain"
+- New whitepaper subsection 4.5 with academic citations (Owen 2006, Monti 2010, Cruse 2011)
+- Owen leads the evidence case in book ch04 and long essay (elevated from footnote to centerpiece)
+- Short essay gains concrete empirical illustration after pianist/piano analogy
+- Book ch13 notes Owen as empirical confirmation of invariance prediction
+- Whitepaper NCC section (6.3) gains correlate/content distinction illustration
+- Regenerated audio for ch04, ch13, essay-long, essay-short, whitepaper
+
 ## [0.5.0] — 2026-07-06
 
 - Switched TTS engine from edge-tts to AWS Polly (Brian neural voice, 90% speed) for higher quality audio
