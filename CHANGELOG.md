@@ -7,6 +7,15 @@ Format: ## [version] — YYYY-MM-DD
 
 ---
 
+## [0.7.0] — 2026-07-14
+
+- Book review updates: refined terminology, scope boundaries, predictions, and new sections
+- Added self-directed neuroplasticity evidence (Schwartz) across source documents
+- Structural clarification and anticipatory defense for deep sleep bliss claims
+- Added generative inevitability of mind principle across source documents
+- Replaced illustrations with new concept-based set
+- Regenerated audio for revised chapters (ch02, ch03, ch04, ch08, ch13, preface, conclusion)
+
 ## [0.6.0] — 2026-07-07
 
 - Integrated Adrian Owen's vegetative-state experiment as lead evidence for brain-as-interface across all source documents
